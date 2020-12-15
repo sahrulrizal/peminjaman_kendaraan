@@ -1,0 +1,30 @@
+.Login > .col-md-4 > .card {
+	margin: 20px;
+}
+.Menu > .tab-pane {
+	animation-name: TabPane;
+	animation-duration: 1.3s;
+	-webkit-animation-name: TabPane;
+	-webkit-animation-duration: 1.3s;
+}
+@keyframes TabPane {
+	from {
+		padding-top: 100px;
+		margin-right: -200px;
+		opacity: 0;
+	} to {
+		padding-top: 20px;
+		margin-right: 0px;
+		opacity: 1;
+	}
+}
+.tab-content > .tab-pane > .col-md-12 > .row > .card {
+	margin: 3px;
+}
+
+
+/* Table */
+.bg-table-barang {
+	background-color: #006bb3;
+	color: white;
+}
