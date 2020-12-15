@@ -32,11 +32,11 @@
 
 		    		<div class="form-group">
 		    			<label class="font-weight-bold">Email</label>
-		    			<input type="email" name="email" placeholder="Masukan Email" class="form-control" required>
+		    			<input type="email" name="email" placeholder="Masukan Email" class="form-control" required min="7">
 		    		</div>
 		    		<div class="form-group">
 		    			<label class="font-weight-bold">Password</label>
-		    			<input type="password" name="password" placeholder="Masukan Password" class="form-control" required>
+		    			<input type="password" name="password" placeholder="Masukan Password" class="form-control" required min="5">
 		    		</div>
 		    		<div class="row">
 		    			<button type="submit" class="btn btn-info ml-3">Login</button>
