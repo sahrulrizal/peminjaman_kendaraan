@@ -1,4 +1,16 @@
 <?php
+<<<<<<< HEAD
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Peminjaman_model extends CI_Model
+{
+
+    public function ambilSemuaData($tbl)
+    {
+        return $this->db->get($tbl);
+    }
+}
+=======
 defined('BASEPATH') OR exit('No Direct script access allowed');
     class Peminjaman_model extends CI_MODEL{
         public function getTable()
@@ -12,3 +24,4 @@ defined('BASEPATH') OR exit('No Direct script access allowed');
             return $query-result();
         }
     }
+>>>>>>> e47e9d085286bbfbcf229e57d6dfdf092d260bd6
