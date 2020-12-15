@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller
+class Karyawan extends CI_Controller
 {
 
     function __construct()
@@ -13,9 +13,7 @@ class Dashboard extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Dashboard';
-
-
+        $data['tb_users'] = $this->M_data->tampil_data()->result();
         $this->load->view('layout/header', $data);
         $this->load->view('layout/sidebar', $data);
         $this->load->view('layout/topbar', $data);
