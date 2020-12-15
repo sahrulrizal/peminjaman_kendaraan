@@ -1,24 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_Auth extends CI_Model {
+class M_Kendaraan extends CI_Model {
 
-	function getKendaraan($email, $pass)
+	function getKendaraan()
 	{
 		// belum beres get nya
-		$this->db->select('email, password, role');
-		$this->db->from('tb_users');
-		$this->db->where('email', $email);
-		$this->db->where('password', $pass);
-		$this->db->limit(1);
+		$this->db->select('*');
+		$this->db->from('tb_kendaraan');
+		$this->db->where('status', NULL);
 
 		$query = $this->db->get();
 
-		if ($query->num_rows() == 1) {
-			return $query->result();
-		} else {
-			return false;
-		}
+		return $query->result();
 	}
 
 }
